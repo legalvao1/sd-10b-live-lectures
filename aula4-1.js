@@ -1,4 +1,13 @@
-let num1 = 5;
+
+let turma = 10;
+let empresa = "trybe";
+turma = 18;
+
+console.log(turma);
+
+
+
+let num1 = 10;
 let num2 = 10;
 let num3 = 15;
 
@@ -16,6 +25,7 @@ let multiplicacao = num1 * num2;
 
 // Comparação
 let comparacao = num1 > num2;
+//console.log(comparacao);
 
 // Condicional
 
@@ -25,8 +35,16 @@ if(num1 > num2) {
     console.log("num2 wins");
 }
 
+
 // Como saber se o num1 + num 2 é par?
 let isEven = ((num1 + num2) % 2 ) == 0;
+
+
+// 0 === "0";
+
+// = (atribuição de valor);
+// == (comparar valores);
+// === (comparar valores e tipos de variáveis);
 
 console.log(isEven);
 
@@ -38,7 +56,7 @@ console.log(isEven);
 
 // Switch
 
-let weekDay = 6;
+let weekDay = 5;
 
 switch(weekDay) {
     case 1:
