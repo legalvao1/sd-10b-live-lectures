@@ -1,4 +1,4 @@
-# Repositorio de aulas ao vivo para estudante da Turma 10 - Tribo B
+# Repositório de aulas ao vivo para estudante da Turma 10 - Tribo B
 
 Este repositório armazena os códigos e scripts fornecidos durante as aulas ao vivo pelos especialistas da Trybe.
 
