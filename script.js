@@ -23,6 +23,9 @@ btnFriday.addEventListener('click', function() {
   }
 });
 
+
+//DIAS DA SEMANA
+
 const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
 const weekDaysList = document.querySelector('.week-days');
 
@@ -34,6 +37,8 @@ for (let index = 0; index < weekDays.length; index += 1) {
 
   weekDaysList.appendChild(dayListItem);
 };
+
+//DIAS DO MÊS
 
 const daysList = [];
 for (index = 1; index < 31; index += 1) {
@@ -66,5 +71,3 @@ for (let index = 0; index < daysList.length; index += 1) {
 function alteraCor(elementos, cor){
   document.querySelector(elementos).style.backgroundColor = cor;
 };
-
-alteraCor('#btn-holiday', 'blue');
