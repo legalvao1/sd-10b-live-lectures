@@ -4,48 +4,66 @@
     <meta charset='UTF-8'/>
     <title>Submeter Palestra</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class=''>
-      <h1>Submeter Palestra</h1>
-      <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
-    </header>
+    <section class="section has-text-centered">
+      <header class=''>
+        <h1 class="title">Submeter Palestra</h1>
+        <p class="subtitle"><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+      </header>
+    </section>
+    <hr>
     <form action="" method="get" class="">
-      <div class="">
-        <div class="">
-          <label for="full-name">Name</label>
-          <input type="text" name="name" id="full-name" placeholder="Enter your full name" required>
+      <div class="field">
+        <div class="control">
+          <label class="label" for="full-name">Name</label>
+          <input class="input" type="text" name="name" id="full-name" placeholder="Enter your full name" required>
         </div>
-        <div class="">
-          <fieldset class="">
-            <legend>Type of Talk</legend>
-            <label for="talk-type-1">Main Stage</label>
-            <input type="radio" name="talk-type" id="talk-type-1" value="main-stage" checked>
-            <label for="talk-type-2">Workshop</label>
-            <input type="radio" name="talk-type" id="talk-type-2" value="workshop">
-          </fieldset>
+        <p class="label">Type of Talk
+          <div class="field">
+            <div class="control">
+              <label class="radio" for="talk-type-1">Main Stage</label>
+              <input class="radio" type="radio" name="talk-type" id="talk-type-1" value="main-stage" checked>
+              <label class="radio" for="talk-type-2">Workshop</label>
+              <input class="radio" type="radio" name="talk-type" id="talk-type-2" value="workshop">
+            </div>
+          </div>
+        </p>
+        <div class="field">
+          <div class="control">
+            <label class="label" for="t-shirt-size">T-Shirt Size</label>
+            <div class="select is-rounded is-small">
+              <select name="t-shirt" id="t-shirt-size">
+                <option value="XS">Extra Small</option>
+                <option value="S">Small</option>
+                <option value="M" selected>Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <label for="t-shirt-size">T-Shirt Size</label>
-          <select name="t-shirt" id="t-shirt-size">
-            <option value="XS">Extra Small</option>
-            <option value="S">Small</option>
-            <option value="M" selected>Medium</option>
-            <option value="L">Large</option>
-            <option value="XL">Extra Large</option>
-          </select>
+        <div class="field">
+          <div class="control">
+            <label class="label" for="text-area-1">Abstract</label>
+            <textarea class="textarea" name="abstract" id="text-area-1" cols="40" rows="10" maxlength="500" minlength="5" placeholder="Describe your talk in 500 characters or less." required></textarea>
+          </div>
         </div>
-        <div class="">
-          <label for="text-area-1">Abstract</label>
-          <textarea name="abstract" id="text-area-1" cols="40" rows="10" maxlength="500" minlength="5" placeholder="Describe your talk in 500 characters or less." required></textarea>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox" for="available-1">
+              <input type="checkbox" name="available" id="available-1" value="is-available">I'm available for the talk.
+            </label>
+          </div>
         </div>
-        <div class="">
-          <label for="available-1">
-            <input type="checkbox" name="available" id="available-1" value="is-available">I'm available for the talk.
-          </label>
-        </div>
-        <div class="">
-          <button type="submit">Submit</button>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-success" type="submit">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-danger" type="reset">Cancel</button>
+          </div>
         </div>
       </div>
     </form>
