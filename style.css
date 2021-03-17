@@ -14,7 +14,7 @@
 }
 
 .menu {
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   width: 900px;
   font-size: 20px;
   display: flex;
@@ -22,12 +22,12 @@
 }
 
 .links {
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login {
-  /* margin-left: 20px; */
+  margin-left: 20px;
 }
 
 .subscribe {
