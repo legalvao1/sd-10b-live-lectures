@@ -314,4 +314,8 @@ footer ul li:nth-child(4) {
   .know-the-hotel .grid li.large {
     flex-basis: 100%;
   }
+
+  .features .grid {
+    flex-direction: column;
+  }
 }
