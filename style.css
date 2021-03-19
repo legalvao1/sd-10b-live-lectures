@@ -277,3 +277,17 @@ footer ul li:nth-child(3) {
 footer ul li:nth-child(4) {
   order: 1
 }
+
+/* @media regras que temos que atender {
+  código
+} */
+
+@media screen and (max-width: 375px) {
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+}
