@@ -9,7 +9,12 @@ const players = [
 
 // Gerando um objeto com nome como chave e email como valor
 
-const newPlayers = players.reduce(() => { });
+const newPlayers = players.reduce((playersAcc, player) => {
+  playersAcc[player.fullName] = player.email;
+  return playersAcc;
+}, {});
+
+console.table(newPlayers);
 
 //Teste
 

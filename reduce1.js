@@ -1,21 +1,20 @@
 const assert = require('assert');
 
-const numbers = [2, 3, 4, 6, 8, 12, 24];
 
 // Somando os números do array com for
 
-let accumulatorFor = numbers[0];
-for (let index = 1; index < numbers.length; index += 1) {
-  accumulatorFor = accumulatorFor + numbers[index];
-}
+// let accumulatorFor = numbers[0];
+// for (let index = 1; index < numbers.length; index += 1) {
+//   accumulatorFor = accumulatorFor + numbers[index];
+// }
 
-console.log(`Resultado da soma com for: ${accumulatorFor}`);
+// console.log(`Resultado da soma com for: ${accumulatorFor}`);
 
 
-// Teste
+// // Teste
 
 const expectedValue = 59;
-assert.strictEqual(accumulatorFor, expectedValue);
+// assert.strictEqual(accumulatorFor, expectedValue);
 
 
 
@@ -26,9 +25,13 @@ assert.strictEqual(accumulatorFor, expectedValue);
 
 
 
+const numbers = [2, 3, 4, 6, 8, 12, 24];
 // Somando os números do array com reduce
 
-
+const accumulatorReduce = numbers.reduce((accumulator, number) => {
+  console.log(`Accumulator = ${accumulator}, Number = ${number}`);
+  return accumulator + number;
+});
 
 
 
@@ -41,7 +44,7 @@ assert.strictEqual(accumulatorFor, expectedValue);
 
 
 // Teste
-// assert.strictEqual(accumulatorReduce, expectedValue);
+assert.strictEqual(accumulatorReduce, expectedValue);
 
 
 
