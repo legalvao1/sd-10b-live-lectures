@@ -1,6 +1,7 @@
 const assert = require('assert');
 
-const sumAll = () => {};
+const sumAll = (...numbers) =>
+  numbers.reduce((a, b) => a + b, 0);
 
 assert.strictEqual(sumAll(1, 2), 3);
 assert.strictEqual(sumAll(1, 2, 3), 6);
