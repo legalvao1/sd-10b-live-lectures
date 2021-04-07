@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const formatDate = (year, month, day, ...rest) => 
+const formatDate = (year, month, day, ..._rest) => 
   `${day}/${month}/${year}`;
 
 assert.strictEqual(

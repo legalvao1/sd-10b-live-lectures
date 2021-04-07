@@ -13,12 +13,16 @@ const bbbParticipant = {
   ],
 };
 
+const { name, nickname, jobs } = bbbParticipant;
+
+const [firstJob, secondJob, thirdJob] = jobs;
+
 assert.strictEqual(
-  `${bbbParticipant.name} também conhecido como ${bbbParticipant.birthplace}`,
+  `${name} também conhecido como ${nickname}`,
   'Gilberto também conhecido como Gil do Vigor',
 );
 
-// assert.strictEqual(
-//   `Possui uma nobre carreira como ${firstJob}, ${secondJob}, ${thirdJob}, etc`,
-//   'Possui uma nobre carreira como Economista, Missionário, Futuro ex BBB, etc',
-// );
+assert.strictEqual(
+  `Possui uma nobre carreira como ${firstJob}, ${secondJob}, ${thirdJob}, etc`,
+  'Possui uma nobre carreira como Economista, Missionário, Futuro ex BBB, etc',
+);

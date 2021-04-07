@@ -30,6 +30,9 @@ const polarBear = {
 };
 
 // Implementação da função
+const animalDescription = ({
+  name, commonName, weightRange: { min, max, measurementUnit = 'kg' },
+}) => `${commonName} (${name}) weighs around ${min}-${max} ${measurementUnit}`;
 
 assert.strictEqual(
   animalDescription(lion),
@@ -37,7 +40,7 @@ assert.strictEqual(
 );
 assert.strictEqual(
   animalDescription(blueWhale),
-  'Blue whale (Balaenoptera musculus) weighs around 45-173',
+  'Blue whale (Balaenoptera musculus) weighs around 45-173 t',
 );
 assert.strictEqual(
   animalDescription(polarBear),
