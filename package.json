@@ -1,0 +1,24 @@
+{
+  "name": "sd-10b-live-lectures",
+  "version": "1.0.0",
+  "description": "Este repositório armazena os códigos e scripts fornecidos durante as aulas ao vivo pelos especialistas da Trybe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-10b-live-lectures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-10b-live-lectures/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-10b-live-lectures#readme",
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-trybe-fundamentals": "1.1.0",
+    "jest": "25.2.3"
+  }
+}
