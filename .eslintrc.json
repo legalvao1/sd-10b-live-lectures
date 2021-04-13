@@ -1,0 +1,13 @@
+{
+  "env": {
+    "es2020": true
+  },
+  "extends": "trybe-fundamentals",
+  "rules": {
+    "max-lines": "off",
+    "max-lines-per-function": "off",
+    "max-params": "off",
+    "linebreak-style": "off",
+    "indent": ["error", 2]
+  }
+}
