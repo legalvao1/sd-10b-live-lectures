@@ -6,3 +6,24 @@ const countries = [
   { name: 'Guiana', population: 746900, area: 214969 },
   { name: 'Irlanda', population: 6378000, area: 70273 },
 ];
+
+function menorPopulacao() {
+  return countries.reduce((acc, country) =>
+    acc.population < country.population ? acc : country, {}
+  ).name;
+}
+
+function maiorPopulacao() {}
+
+function mediaDePopulacao() {
+  const totalPopulation = countries
+    .reduce((acc, { population }) => acc + population, 0);
+
+  return totalPopulation / countries.length;
+}
+
+module.exports = {
+  menorPopulacao,
+  maiorPopulacao,
+  mediaDePopulacao
+}

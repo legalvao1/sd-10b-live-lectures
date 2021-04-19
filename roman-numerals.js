@@ -4,6 +4,10 @@ const romanSymbols = [
 ];
 
 const convertToRoman = integer => {
+  if (integer <= 0) {
+    throw new Error('Informe um número maior do que 0');
+  }
+
   let romanNumeral = '';
 
   romanValues.forEach((romanValue, index) => {
