@@ -1,0 +1,10 @@
+div {
+  width: 32px;
+  height: 32px;
+}
+
+li {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
