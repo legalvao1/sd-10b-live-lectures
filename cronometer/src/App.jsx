@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   cronometerOnOffSwitch() {
-    this.setState((state) => ({ showCronometer: !state.showCronometer }));
+    this.setState((prevState) => ({ showCronometer: !prevState.showCronometer }));
   }
 
   render() {
@@ -19,12 +19,12 @@ class App extends React.Component {
     return (
       <main className="App">
         <section className="App-header">
-          {showCronometer ? <Cronometer /> : null}
+          {showCronometer && <Cronometer />}
         </section>
 
         <button
           type="button"
-          onClick={ () => this.cronometerOnOffSwitch() }
+          onClick={ this.cronometerOnOffSwitch }
         >
           { showCronometer ? 'Desligar cronômetro' : 'Ligar cronômetro' }
         </button>
