@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
-import Content from './components/Content';
-import Header from './components/Header';
+import { Content, Header } from './components';
 
 class App extends React.Component {
   render() {
