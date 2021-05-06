@@ -38,16 +38,3 @@ main {
 ul {
   list-style-type: none;
 }
-
-.Header {
-  border: 2px solid red;
-}
-
-.Content {
-  border: 2px solid red;
-  height: 700px;
-}
-
-body {
-  padding: 10px;
-}
