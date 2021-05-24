@@ -25,11 +25,11 @@ class App extends React.Component {
   render() {
     const { data, pokemon } = this.state;
     return (
-      <div className="App-header">
+      <main className="App-header">
         <div>
-          <h1>Pokémon Cards</h1>
+          <h1>Pokémon Cards</h1> 
         </div>
-        <div>
+        <section>
           <input 
             type="text" 
             onChange={ (e) => this.handleChange(e) } 
@@ -38,7 +38,7 @@ class App extends React.Component {
           <button onClick={ () => this.handleClick(pokemon) }>
             Pesquisar
           </button>
-        </div>
+        </section>
         <div>
           {data && (
             <div>
@@ -50,7 +50,7 @@ class App extends React.Component {
             </div>
           )}
         </div>
-      </div>
+      </main>
     );
   }
 }
