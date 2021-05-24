@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Comments from './components/Comments';
 import NotFound from './components/NotFound';
