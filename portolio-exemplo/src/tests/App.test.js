@@ -32,7 +32,7 @@ describe('routes', () => {
 });
 
 describe('App.js comments', () => {
-  test.only('Verifica se o comentário digitado aparece na tela', () => {
+  test('Verifica se o comentário digitado aparece na tela', () => {
     const { history } = renderWithRouter(<App />);
 
     const aboutMeText = screen.getByRole('heading', {
@@ -62,6 +62,21 @@ describe('App.js comments', () => {
 
     const comment = screen.getByText('primeiro comentário');
     expect(comment).toBeInTheDocument();
-  })
-})
+
+    const { pathname } = history.location;
+    expect(pathname).toBe('/comments');
+  });
+});
+
+describe('Rota não encontrada', () => {
+  test('Verifica se carrega a página não encontrada, erro 404', () => {
+    const { history } = renderWithRouter(<App />);
+
+    const route = '/pagina-que-nao-existe';
+    history.push(route);
+
+    const pageNotFound = screen.getByText(/Página não encontrada/i);
+    expect(pageNotFound).toBeInTheDocument();
+  });
+});
 
