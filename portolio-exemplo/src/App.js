@@ -1,13 +1,27 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Header from './components/Header';
+import { Switch, Route, Link } from 'react-router-dom';
 import Comments from './components/Comments';
 import NotFound from './components/NotFound';
 
 function App() {
   return (
     <div>
-      <Header />
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Sobre mim</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projetos</Link>
+            </li>
+            <li>
+              <Link to="/comments">Deixe um comentário</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <Switch>
         <Route exact path="/">
           <section>
