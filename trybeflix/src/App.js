@@ -8,21 +8,20 @@ import categoriesData from './data';
 import './index.css';
 
 class App extends React.Component {
-  constructor() {
+  constructor () {
     super();
 
     this.state = {
       categories: categoriesData,
-    };
+    }
   }
-
   render() {
     const { categories } = this.state;
     return (
       <div>
         <Header />
         <main className="main">
-          <Player movie= { categories[0].movies[0] } />
+          <Player movie={ categories[0].movies[0] } />
           <Sidebar categories={ categories } />
         </main>
       </div>

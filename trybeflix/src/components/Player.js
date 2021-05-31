@@ -2,26 +2,26 @@ import React from 'react';
 
 class Player extends React.Component {
   render() {
-    const { selectedMovie, selectedCategory } = this.props;
+    const { movie } = this.props;
     return (
       <div>
         <h1>
-          {/* {selectedMovie.title} */}
+          {movie.title}
         </h1>
         <h3>
           {/* {selectedCategory.name} */}
           {' '}
           -
           {' '}
-          {/* {selectedMovie.released} */}
+          {movie.released}
         </h3>
         <section>
-          {/* <iframe
+          <iframe
             title="trailer"
             width="420"
             height="315"
-            src={ selectedMovie.link }
-          /> */}
+            src={ movie.link }
+          />
         </section>
       </div>
     );
